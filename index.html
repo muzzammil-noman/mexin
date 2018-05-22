@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mexin</title>
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css">                                                                           
+<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body>
+    <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/jssor.slider-22.0.6.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+
+<!--=================================================================================================-->
+	<div class="top_bar">
+    	<div class="container">
+        	<div class="top_links">
+            	<ul>
+                	<li><a href="#">FORM</a></li>
+                    <li>|</li>
+                    <li><a href="#">TERMS</a></li>
+                    <li>|</li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="social_icon">
+            	<a href="#" class="facebook"><i  class="fa fa-facebook fa-lg"></i></a>
+                <a href="#" class="dribbble"><i  class="fa fa-dribbble fa-lg"></i></a>
+                <a href="#" class="vimeo"><i  class="fa fa-vimeo fa-lg"></i></a>
+                <a href="#" class="google"><i  class="fa fa-google fa-lg"></i></a>
+                <a href="#" class="twitter"><i  class="fa fa-twitter fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="clearfix">
+    	<div class="container">
+			<div class="logo">
+            	<a href="#"><img src="assets/img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="search">
+            	<input type="text" class="search-box">
+            </div>
+            <ul class="nav">
+            	<li class="current"><a href="#">HOME</a>
+                	<ul>
+                    	<li class="current"><a href="#">Home1</a></li>
+                        <li><a href="#">Home2</a></li>
+                        <li><a href="#">Home3</a>
+                        	<ul>
+                            	<li><a href="#">Submenu1</a></li>
+                                <li><a href="#">Submenu2</a></li>
+                                <li><a href="#">Submenu3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">WORK</a></li>
+            </ul>
+        </div> 
+   </header>
+   <div class="slider">
+   	    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+            <div data-p="225.00">
+                <img data-u="image" src="assets/img/slider.jpg" />
+                <div data-u="caption" data-t="0" style="position:absolute;top:120px;left:50px;width:470px;height:220px;z-index:0;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="assets/img/c-phone-horizontal.png" />
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow: hidden;">
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="assets/img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="assets/img/c-slide-3.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="assets/img/c-navigator-horizontal.png" />
+                    <img data-u="caption" data-t="3" style="position:absolute;top:740px;left:1600px;width:257px;height:300px;z-index:0;" src="assets/img/c-finger-pointing.png" />
+                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="assets/img/purple.jpg" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="assets/img/blue.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+   </div>
+   <section class="container">
+   		<div class="clearfix">
+        <div class="one-third">
+        	<article class="icon-box">
+            	<i class="fa fa-cube fa-2x"></i>
+                <h2>Web Hosting</h2>
+                <p>Innovative design always develops in tandem with innovative techonology, and can bever be an end in it self. Lorem ipsum dolor</p>
+            </article>
+        </div>
+        <div class="one-third">
+        	<article class="icon-box">
+            	<i class="fa fa-tv fa-2x"></i>
+                <h2>Web Design</h2>
+                <p>Innovative design always develops in tandem with innovative techonology, and can bever be an end in it self. Lorem ipsum dolor</p>
+            </article>
+        </div>
+        <div class="one-third last-col">
+        	<article class="icon-box">
+            	<i class="fa fa-globe fa-2x"></i>
+                <h2>Server Management</h2>
+                <p>Innovative design always develops in tandem with innovative techonology, and can bever be an end in it self. Lorem ipsum dolor</p>
+            </article>
+        </div>
+        </div>
+        <hr>
+        <div class="clearfix">
+        <div class="left columns">
+        	<aside class="aside-bar">
+            	<h4>Recent Works</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Aenean nisl orci</p>
+                <a href="#" class="magicmore">See All</a>
+            	<hr>
+                <div class="listbox1">
+                	<h5>Categories</h5>
+                	<ul>
+                    	<li><a href="#">Design</a></li>
+                        <li><a href="#">Print</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+                <hr class="verticlespace1">
+                <div class="listbox1">
+                	<h5>Archives</h5>
+                	<ul>
+                    	<li><a href="#">May 2012 (2)</a></li>
+                        <li><a href="#">April 2012 (3)</a></li>
+                        <li><a href="#">March 2012 (5)</a></li>
+                        <li><a href="#">February 2012 (1)</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="right columns">
+        	<div class="recent-work-item">
+            	<figure class="one columns">
+                	<img src="assets/img/recent-1.jpg" alt="mexin">
+               	 <figcaption>
+                 	<h4>Save the World</h4>
+                    <p>10 MAY - 2016 <a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+                 </figcaption>
+                </figure>
+                <figure class="one columns">
+                	<img src="assets/img/recent-2.jpg" alt="mexin">
+               	 <figcaption>
+                 	<h4>Mall Admirer</h4>
+                    <p>10 MAY - 2016 <a href="#">DESIGN</a>,<a href="#">VIDEO</a></p>
+                 </figcaption>
+                </figure>
+                <figure class="one columns">
+                	<img src="assets/img/recent-3.jpg" alt="mexin">
+               	 <figcaption>
+                 	<h4>Spoilt for choice</h4>
+                    <p>10 MAY - 2016 <a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+                 </figcaption>
+                </figure>
+                <figure class="one columns">
+                	<img src="assets/img/recent-4.jpg" alt="mexin">
+               	 <figcaption>
+                 	<h4>Busy girl</h4>
+                    <p>10 MAY - 2016 <a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+                 </figcaption>
+                </figure>
+            </div>
+        </div>
+      </div>
+      <hr class="verticlespace1">
+      <div class="callout">
+		<a href="#" class="callurl">Purchase Now</a>
+        <h4>Clean, Flat, Modern &amp; Responsive0 Template</h4>
+        <p>Minimal design helps viewers navigate though the design.</p>
+	  </div>
+      <hr class="verticlespace1">
+      <div class="clearfix">
+      <div class="ness1">
+      	<h4>Only Use what is necessary</h4>
+        <img src="assets/img/ness1.jpg" class="photo-right">
+        <p>Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac loreet lorem lacinia et. Cras et ligula libero.</p>
+        <a href="#" class="magicmore t-down">Haretra in sodales atsen interdum</a>
+      </div>
+      <div class="ness2">
+      	<h4>Clean and User friendly layouts</h4>
+        <img src="assets/img/ness2.jpg" class="photo-right">
+        <p>Aliquam enim enim, pharetra in sodales at, interdum sit amet dui. Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac loreet lorem lacinia et. Cras et ligula libero.</p>
+        <a href="#" class="magicmore t-down">Haretra in sodales atsen interdum</a>
+      </div>
+      </div>
+	  <hr class="verticlespace1">
+      <div class="blog">
+      	<h4>LATEST FROM BLOG</h4>
+        <hr>
+        <div class="clearfix">
+        <div class="one-third no-sp">
+        	<img src="assets/img/blog1.jpg" alt="blog">
+            <h3>Job  Seeking Out of Your Industry</h3>
+            <p>10 MAY 2016</p>
+        </div>
+        <div class="one-third no-sp">
+        	<img src="assets/img/blog2.jpg" alt="blog">
+            <h3>Magnifying Uses of Small Spaces</h3>
+            <p>10 MAY 2016</p>
+        </div>
+        <div class="one-third no-sp last-col ">
+        	<img src="assets/img/blog3.jpg" alt="blog">
+            <h3>What Your College Degree Will Be Worth</h3>
+            <p>10 MAY 2016</p>
+        </div>
+      </div>
+      </div>
+      <hr class="verticlespace1">
+      <div class="quote">
+      	<img src="assets/img/cor.jpg">
+        <h6>QUOTE OF THE DAY</h6>
+		<h3>Care and accuracy in the design process show respect towards the consumer.</h3>        
+        <h5>John Smith <span>- Manager at Mexin</span></h5>
+      </div>
+   </section>
+   <hr class="verticlespace1">
+   <footer id="footer" class="clearfix">
+   		<div class="container clearfix">
+        	<div class="one-third">
+            	<h5 class="subtitle">contact information</h5>
+                <hr class="verticlespace1">
+            	<div class="back-map">
+                	<h2><strong>Address: </strong> No.28 - 63739 street lorem ipsum City, Country</h2>
+					<h2><strong>Phone: </strong><span><i class="fa fa-skype"></i> + 1 (234) 567 8901</span></h2>
+                    <h2><strong>Fax: </strong>+ 1 (234) 567 8901</h2>
+                    <h2><strong>Email: </strong>support@yoursite.com</h2>
+             	</div>
+                <hr class="verticlespace1">
+                <h5 class="subtitle">stay connected</h5>
+                
+                <div class="social-work">
+                	<a href="#" class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#" class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+                    <a href="#" class="pinterest"><i class="fa fa-pinterest-square fa-lg"></i></a>
+                    <a href="#" class="vimeo"><i class="fa fa-vimeo fa-lg"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google fa-lg"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube-play fa-lg"></i></a>
+                </div><!-- social-work -->
+            </div><!-- one-third -->
+            
+            
+            <div class="one-third">
+           	  <h5 class="subtitle">latest tweet</h5>
+              	<div class="its-tweet">
+                	<i class="fa fa-twitter"></i>
+                </div><!-- its-tweet -->
+                	<h2 class="webnus"><a href="#">@webnus</a></h2>
+                    <hr class="verticlespace1">
+                    <p class="theme">Check out this great <a href="#">#themeforest</a> item<br>'Florida - Premium Multipurpose<br>Responsive Theme' <br><a href="#">http://t.co/1BJ0t9THgH</a></p>
+                </div><!-- one-third -->
+            
+            
+            <div class="one-third last-col">
+            	<h5 class="subtitle">flickr photostream</h5>
+                <div class="flickr">
+                	<a href="#"><img src="assets/img/flickr1.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr2.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr3.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr4.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr5.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr6.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr7.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr8.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr9.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr10.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr11.jpg"></a>
+                    <a href="#"><img src="assets/img/flickr12.jpg"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="foot-2">
+        	<div class="container">
+            	<p>&copy; 2012. All Rights Reserved. Powered By <span>WordPress</span></p>
+                <img src="assets/img/mexin.jpg">
+            </div>
+        </div>
+        
+   </footer>
+   
+</body>
+</html>
